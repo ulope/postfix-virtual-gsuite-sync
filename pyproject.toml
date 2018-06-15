@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "postfix-virtual-gsuite-sync"
+version = "0.1.0"
+description = ""
+authors = ["Ulrich Petri <ulo@ulo.pe>"]
+
+[tool.poetry.dependencies]
+python = "*"
+click = "^6.7"
+google-api-python-client = "^1.7"
+oauth2client = "^4.1"
+python-rex = "^0.4.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+bpython = "^0.17.1"
+
+[tool.poetry.scripts]
+gsuite-sync = 'postfix_virtual_gsuite_sync.cli:main'
